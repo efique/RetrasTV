@@ -20,11 +20,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ConnexionComponent,
     DashboardComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
