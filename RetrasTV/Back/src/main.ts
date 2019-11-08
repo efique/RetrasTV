@@ -6,9 +6,6 @@ import express from 'express';
 import { AgenceController } from './Agence/Agence.controller';
 import { AuthController } from './Auth/auth.controller';
 import './Auth/auth.strategy';
-import { ImmobilierController } from './Immobilier/Immobilier.controller';
-import { InscriptionController } from './inscription/inscription.controller';
-import { LocalisationController } from './Localisation/Localisation.controller';
 import logger from './logger.tools';
 import { setupDb } from './setup-db';
 import { UsersController } from './Users/Users.contoller';
@@ -50,12 +47,6 @@ async function bootstrap() {
   // });
 
   // use custom controller on '/inscription' pattern
-  const inscriptionRoutes = await new InscriptionController().getRoutes();
-  app.use('/inscription', inscriptionRoutes);
-
-  const immobilierRoutes = await new ImmobilierController().getRoutes();
-  app.use('/immobilier', immobilierRoutes);
-
   const agenceRoutes = await new AgenceController().getRoutes();
   app.use('/agence', agenceRoutes);
 
@@ -68,9 +59,6 @@ async function bootstrap() {
 
   const authRoutes = await new AuthController().getRoutes();
   app.use('/auth', authRoutes);
-
-  const localisationRoutes = await new LocalisationController().getRoutes();
-  app.use('/localisation', localisationRoutes);
 
   // define application port
   app.listen(3015);
