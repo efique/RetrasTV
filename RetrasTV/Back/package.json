@@ -21,6 +21,7 @@
     "passport-http-bearer": "^1.0.1",
     "passport-jwt": "^4.0.0",
     "ts-node": "^8.0.3",
+    "twitch": "^3.5.6",
     "typeorm": "^0.2.15",
     "typescript": "^3.3.4000"
   },
