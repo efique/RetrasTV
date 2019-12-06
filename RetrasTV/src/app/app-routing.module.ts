@@ -7,6 +7,7 @@ import { DescriptionComponent } from "./description/description.component";
 import { VodComponent } from "./vod/vod.component";
 
 const routes: Routes = [
+  { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "home", component: StreamComponent },
   { path: "clips", component: ClipsComponent },
   { path: "planning", component: PlanningComponent },
