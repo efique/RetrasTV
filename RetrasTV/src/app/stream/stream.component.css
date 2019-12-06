@@ -1,0 +1,10 @@
+#stream {
+  height: 650px;
+  width: 75%;
+}
+
+#chat {
+  height: 650px;
+  width: 25%;
+  background-color: grey;
+}
