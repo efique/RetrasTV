@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /* You can add global styles to this file, and also import other style files */
 
+=======
+>>>>>>> cd1601ecca793a4d5fef525932ccac21bd504d3b
 html,
 body {
   height: 100%;
@@ -7,4 +10,8 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+<<<<<<< HEAD
+=======
+  background: linear-gradient(#f7941d, #f15a29);
+>>>>>>> cd1601ecca793a4d5fef525932ccac21bd504d3b
 }

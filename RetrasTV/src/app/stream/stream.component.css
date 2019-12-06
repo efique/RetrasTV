@@ -6,5 +6,8 @@
 #chat {
   height: 650px;
   width: 25%;
-  background-color: grey;
+}
+
+.simplebar-content {
+  background: linear-gradient(#f7941d, #f15a29);
 }

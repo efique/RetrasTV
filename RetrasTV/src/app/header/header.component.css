@@ -1,0 +1,18 @@
+.row {
+  display: flex;
+  flex: row;
+}
+
+nav {
+  display: flex;
+  text-align: center;
+}
+
+a {
+  margin-right: 25px;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+}
