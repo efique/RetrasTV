@@ -7,3 +7,7 @@
   height: 650px;
   width: 25%;
 }
+
+.simplebar-content {
+  background: linear-gradient(#f7941d, #f15a29);
+}
