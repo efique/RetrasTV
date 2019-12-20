@@ -17,6 +17,17 @@
   border-bottom: 1px solid black;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.desc {
+  position: relative;
+  display: inline-block;
+  height: 310px;
+  width: 100%;
+}
+
 .imgDesc {
   width: 20%;
   position: absolute;
@@ -27,9 +38,4 @@
   margin-left: 20%;
   position: relative;
   display: inline-block;
-}
-
-.desc {
-  position: relative;
-  display: flex;
 }
