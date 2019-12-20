@@ -1,3 +1,11 @@
+.title_clips {
+  text-align: center;
+}
+
+.bordure {
+  border-bottom: 1px solid black;
+}
+
 ul {
   display: flex;
   flex-wrap: wrap;
