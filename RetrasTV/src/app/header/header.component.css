@@ -1,18 +1,22 @@
-.row {
-  display: flex;
-  flex: row;
+.logo {
+  height: 45%;
+  width: 45%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
 
-nav {
-  display: flex;
+.menu {
   text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2%;
+}
+
+ul {
+  margin-top: 0;
 }
 
 a {
   margin-right: 25px;
-}
-
-ul {
-  display: flex;
-  padding: 0;
 }
