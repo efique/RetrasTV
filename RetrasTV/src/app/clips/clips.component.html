@@ -1,4 +1,9 @@
-<p>Voici les différents clips de la chaîne !</p>
+<div class="bordure"></div>
+
+<h3 class="title_clips">Voici les différents clips de la chaîne !</h3>
+
+<div class="bordure"></div>
+
 <ul>
   <li *ngFor="let clip of clips">
     <iframe [src]="clip | safe" frameborder="1" autoplay="false"></iframe>

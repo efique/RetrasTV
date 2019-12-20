@@ -1,3 +1,16 @@
+.title,
+.channelDescription {
+  text-align: center;
+}
+
+.title {
+  margin: 16px 0px;
+}
+
+.bordure {
+  border-bottom: 1px solid black;
+}
+
 .imgDesc {
   width: 20%;
 }
