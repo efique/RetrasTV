@@ -25,7 +25,7 @@ export class ClipsComponent implements OnInit {
       )
       .subscribe((value: { data: IClips[] }) => {
         for (let i = 0; i < value.data.length; i++) {
-          this.clips.push(value.data[i].embed_url);
+          this.clips.push(value.data[i].embed_url + "&autoplay=false");
           // this.clips.push(
           //   "<iframe src='" +
           //     value.data[i].embed_url +
