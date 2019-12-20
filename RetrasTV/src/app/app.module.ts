@@ -12,7 +12,7 @@ import { VodComponent } from "./vod/vod.component";
 import { ClipsComponent } from "./clips/clips.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
-import { SafePipe } from './safe.pipe';
+import { SafePipe } from "./safe.pipe";
 
 @NgModule({
   declarations: [
@@ -35,4 +35,4 @@ import { SafePipe } from './safe.pipe';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

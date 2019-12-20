@@ -9,7 +9,7 @@ import IClips from "../models/IClips";
 })
 export class ClipsComponent implements OnInit {
   clips: string[] = [];
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
     const httpOptions = {
@@ -23,9 +23,14 @@ export class ClipsComponent implements OnInit {
         "https://api.twitch.tv/helix/clips?broadcaster_id=441022939",
         httpOptions
       )
-      .subscribe((value: IClips[]) => {
+      .subscribe((value: { data: IClips[] }) => {
         for (let i = 0; i < value.data.length; i++) {
-          this.clips.push(value.data[i].embed_url);
+          this.clips.push(value.data[i].thumbnail_url);
+          // this.clips.push(
+          //   "<iframe src='" +
+          //     value.data[i].embed_url +
+          //     "' frameborder='1'></iframe>"
+          // );
           console.log(this.clips[i]);
         }
       });

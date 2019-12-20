@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 <p>clips works!</p>
 <ul>
-    <li *ngFor=" let clip of clips">
-        <iframe src="{{ clip | safe }}" frameborder="0"></iframe>
-        <!-- {{clip}} -->
-    </li>
+  <li *ngFor="let clip of clips">
+    <iframe [src]="clip | safe" frameborder="1"></iframe>
+    <!-- {{ clip }} -->
+  </li>
 </ul>
-=======
->>>>>>> cd1601ecca793a4d5fef525932ccac21bd504d3b
