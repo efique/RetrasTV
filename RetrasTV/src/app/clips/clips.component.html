@@ -1,7 +1,7 @@
 <p>Voici les différents clips de la chaîne !</p>
 <ul>
   <li *ngFor="let clip of clips">
-    <iframe [src]="clip | safe" frameborder="1"></iframe>
+    <iframe [src]="clip | safe" frameborder="1" autoplay="false"></iframe>
     <!-- {{ clip }} -->
   </li>
 </ul>

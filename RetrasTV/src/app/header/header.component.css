@@ -1,3 +1,8 @@
+@font-face {
+  font-family: bebas;
+  src: url("../../assets/font/Bebas-Regular.ttf");
+}
+
 .logo {
   height: 45%;
   width: 45%;
@@ -11,12 +16,44 @@
   margin: 0 auto;
   display: block;
   margin-bottom: 2%;
-}
-
-ul {
-  margin-top: 0;
+  border: white solid 5px;
+  width: 80%;
+  border-radius: 50px;
 }
 
 a {
+  border: white solid 5px;
+  border-radius: 50px;
   margin-right: 25px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 5px 5%;
+  width: fit-content;
+  padding: 15px;
+  font-size: 1.5em;
+  transition: 0.5s;
+  font-family: "bebas";
+  letter-spacing: 1px;
+}
+
+a:hover {
+  color: rgba(255, 0, 0, 0);
+  text-shadow: -30px 0 white, 0 30px white, 30px 0 white, 0 -30px white;
+  transition: 0.5s;
+  border: solid rgba(255, 0, 0, 0) 5px;
+}
+
+li {
+  display: inline;
+}
+
+.retras:hover {
+  text-shadow: -60px 0 white, 0 30px white, 60px 0 white, 0 -30px white;
+}
+.description:hover {
+  text-shadow: -70px 0 white, 0 30px white, 70px 0 white, 0 -30px white;
+}
+.planning:hover {
+  text-shadow: -50px 0 white, 0 30px white, 50px 0 white, 0 -30px white;
 }
