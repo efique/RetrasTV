@@ -4,7 +4,16 @@ body {
 }
 body {
   margin: 0;
-  font-family: bebas;
+  font-family: roboto;
   background: #f58c1f;
   color: white;
+}
+::-webkit-scrollbar {
+  height: 0px;
+  width: 6px;
+  background-color: #f58c1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
 }
