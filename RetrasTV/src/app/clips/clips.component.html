@@ -6,7 +6,8 @@
 
 <ul>
   <li *ngFor="let clip of clips">
-    <iframe [src]="clip | safe" frameborder="1"></iframe>
-    <!-- {{ clip }} -->
+    <iframe [src]="clip[0] | safe" frameborder="1" scrolling="no"></iframe
+    ><br />
+    <span> {{ clip[1] }} par {{ clip[2] }} </span>
   </li>
 </ul>

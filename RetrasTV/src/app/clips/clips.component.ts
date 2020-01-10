@@ -8,7 +8,7 @@ import IClips from "../models/IClips";
   styleUrls: ["./clips.component.css"]
 })
 export class ClipsComponent implements OnInit {
-  clips: string[] = [];
+  clips = [];
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
@@ -25,12 +25,11 @@ export class ClipsComponent implements OnInit {
       )
       .subscribe((value: { data: IClips[] }) => {
         for (let i = 0; i < value.data.length; i++) {
-          this.clips.push(value.data[i].embed_url + "&autoplay=false");
-          // this.clips.push(
-          //   "<iframe src='" +
-          //     value.data[i].embed_url +
-          //     "' frameborder='1'></iframe>"
-          // );
+          this.clips.push([
+            value.data[i].embed_url + "&autoplay=false",
+            value.data[i].title,
+            value.data[i].creator_name
+          ]);
           console.log(this.clips[i]);
         }
       });
