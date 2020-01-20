@@ -21,21 +21,19 @@ ul {
   list-style-type: none;
 }
 
-.desc {
-  position: relative;
+li {
   display: inline-block;
-  height: 310px;
-  width: 100%;
+  width: fit-content;
 }
-
-.imgDesc {
-  width: 20%;
-  position: absolute;
+.desc {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 75%;
+  margin: 10px auto;
 }
 
 .textDesc {
-  width: 80%;
-  margin-left: 20%;
-  position: relative;
-  display: inline-block;
+  align-self: center;
+  font-size: 1.25em;
+  text-align: justify;
 }
