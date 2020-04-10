@@ -1,0 +1,14 @@
+<script src="https://apis.google.com/js/api.js"></script>
+
+<div class="bordure"></div>
+
+<h3 class="title_vods">Voici les différentes vods de la chaîne !</h3>
+
+<div class="bordure"></div>
+
+<ul>
+  <li *ngFor="let vod of vods">
+    <iframe [src]="vod[0] | safe" frameborder="1" scrolling="no"></iframe><br />
+    <span> {{ vod[1] }} par {{ vod[2] }} </span>
+  </li>
+</ul>
