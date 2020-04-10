@@ -20,7 +20,7 @@ export class ClipsComponent implements OnInit {
     };
     this.http
       .get(
-        "https://api.twitch.tv/helix/clips?broadcaster_id=441022939",
+        "https://api.twitch.tv/helix/clips?broadcaster_id=441022939&first=6",
         httpOptions
       )
       .subscribe((value: { data: IClips[] }) => {
