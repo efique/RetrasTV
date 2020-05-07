@@ -12,29 +12,29 @@ export class VodComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(){
-    const httpOptions = {
-      headers: new HttpHeaders({
-        "Content-Type": "aplication/json"
-      })
-    };
-    this.http.get(
-      "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDUvJu0o6d3uBs2btHd0VWNH0qfM-I6YQY&channelId=UCnjeK3mWAL_RfAyMdYts9GA&order=date&part=snippet &type=video,id&maxResults=50",
-      httpOptions
-      )
-      .subscribe( value => {
+    // const httpOptions = {
+    //   headers: new HttpHeaders({
+    //     "Content-Type": "aplication/json"
+    //   })
+    // };
+    // this.http.get(
+    //   "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDUvJu0o6d3uBs2btHd0VWNH0qfM-I6YQY&channelId=UCnjeK3mWAL_RfAyMdYts9GA&order=date&part=snippet &type=video,id&maxResults=50",
+    //   httpOptions
+    //   )
+    //   .subscribe( value => {
         
-        // console.log(value)
-        for (let i = 0; i < value.items.length; i++) {
-          this.videos.push([
-            "https://www.youtube.com/embed/" + value.items[i].id.videoId,
-            value.items[i].snippet.title
-          ])
-          //console.log(value.items[i].id.videoId + " - " + value.items[i].snippet.title)
-        }
-        console.log(this.videos)
+    //     // console.log(value)
+    //     for (let i = 0; i < value.items.length; i++) {
+    //       this.videos.push([
+    //         "https://www.youtube.com/embed/" + value.items[i].id.videoId,
+    //         value.items[i].snippet.title
+    //       ])
+    //       //console.log(value.items[i].id.videoId + " - " + value.items[i].snippet.title)
+    //     }
+    //     console.log(this.videos)
         
         
-      });
+    //   });
   }
 
   // ngOnInit() {

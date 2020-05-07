@@ -2,10 +2,14 @@ div {
   display: inline-block;
   font-size: 13px;
   width: 100%;
+  background-color: #f58c1f;
+  position: fixed;
+  bottom: 0;
 }
 
 p {
   display: inline-block;
+  color: white;
 }
 
 #left {
@@ -19,9 +23,4 @@ p {
 #right {
   float: right;
   margin-right: 15px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
 }

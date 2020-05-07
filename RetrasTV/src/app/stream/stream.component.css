@@ -1,13 +1,47 @@
 #stream {
-  height: 650px;
-  width: 75%;
+  height: 600px;
+  width: 50%;
+  margin-left: 10%;
+  margin-right: 5%;
+  display: inline-block;
 }
 
-#chat {
-  height: 650px;
-  width: 25%;
+#chatiframe {
+  height: 600px;
+  width: 100%;
+
+}
+
+.chat{
+  height: 600px;
+  width: 15%;
+  display: inline-block;
+}
+
+.angles{
+  position: absolute;
+  display: block;
+}
+
+.anglehaut{
+  width: 10%;
+}
+
+.anglebas{
+  width: 10%;
+  margin-top: 420px;
+  margin-left: 110px;
 }
 
 .simplebar-content {
   background: linear-gradient(#f7941d, #f15a29);
+}
+
+.title {
+  margin-left: 10%;
+  width: 50%;
+}
+
+.orange{
+  color: #f58c1f;
 }

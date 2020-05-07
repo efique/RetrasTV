@@ -1,19 +1,24 @@
+@font-face {
+  font-family: bebas;
+  src: url("./assets/font/BebasNeue-Regular.ttf");
+}
+
 html,
 body {
   height: auto;
 }
 body {
   margin: 0;
-  font-family: roboto;
-  background: #f58c1f;
-  color: white;
+  font-family: "bebas";
+  background: white;
+  color: black;
+  margin-bottom: 100px;
 }
 ::-webkit-scrollbar {
   height: 0px;
   width: 6px;
-  background-color: #f58c1f;
-}
-
-::-webkit-scrollbar-thumb {
   background-color: white;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #f58c1f;
 }

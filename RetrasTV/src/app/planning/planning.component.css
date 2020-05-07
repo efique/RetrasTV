@@ -1,0 +1,15 @@
+@font-face {
+    font-family: bebas;
+    src: url("../../assets/font/BebasNeue-Regular.ttf");
+  }
+
+.title {
+    margin-left: 5%;
+    width: 50%;
+    font-family: "bebas";
+  }
+
+.orange{
+    color: #f58c1f;
+    font-weight: bold;
+  }

@@ -1,3 +1,5 @@
+<h2 class="title"><span class="orange">Retras TV -</span> Bienvenue sur le stream, installes toi !</h2>
+
 <iframe
   id="stream"
   src="https://player.twitch.tv/?channel=retrastv"
@@ -6,9 +8,13 @@
   scrolling="no"
 ></iframe>
 
-<iframe
-  id="chat"
-  src="https://www.twitch.tv/embed/retrastv/chat?darkpopout"
-  frameborder="0"
-  scrolling="no"
-></iframe>
+<div class="chat">
+  <img src="../../assets/img/angle_chat_haut.png" alt="anglehaut" class="angles anglehaut">
+  <img src="../../assets/img/angle_chat_bas.png" alt="anglebas" class="angles anglebas">
+  <iframe
+    id="chatiframe"
+    src="https://www.twitch.tv/embed/retrastv/chat"
+    frameborder="0"
+    scrolling="no"
+  ></iframe>
+</div>

@@ -1,20 +1,16 @@
-.title,
-.channelDescription,
-.textDesc {
-  text-shadow: 0.5px 0.5px black;
+@font-face {
+  font-family: bebas;
+  src: url("../../assets/font/BebasNeue-Regular.ttf");
 }
 
-.title,
-.channelDescription {
-  text-align: center;
+.description{
+  margin-left: 5%;
+  width: 50%;
 }
 
 .title {
   margin: 16px 0px;
-}
-
-.bordure {
-  border-bottom: 1px solid white;
+  font-family: "bebas";
 }
 
 ul {
@@ -25,15 +21,34 @@ li {
   display: inline-block;
   width: fit-content;
 }
+
 .desc {
   display: grid;
   grid-template-columns: auto auto;
-  width: 75%;
   margin: 10px auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  background-image: url("../../assets/img/ondulationdescription.png");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  column-gap: 2%;
+  padding: 25px;
+}
+
+.imgDesc{
+  margin-left: 25%;
+  width: 50%;
 }
 
 .textDesc {
   align-self: center;
   font-size: 1.25em;
   text-align: justify;
+  text-align-last: center;
+  font-family: "bebas";
+}
+
+.orange{
+  color: #f58c1f;
+  font-weight: bold;
 }
