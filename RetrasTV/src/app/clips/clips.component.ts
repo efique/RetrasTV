@@ -9,16 +9,20 @@ import IClips from "../models/IClips";
 })
 export class ClipsComponent implements OnInit {
   clips = [];
+  token
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    const httpOptions = {
-      headers: new HttpHeaders({
-        "Content-Type": "application/json",
-        "client-id": "v495cr8bd4ij2trdgeidujks3ec420"
-      })
-    };
-    this.http
+    
+
+    this.http.post(
+      "https://id.twitch.tv/oauth2/token?client_id=tvzmv9pqdb75jezxq3epy0plkkgd19&client_secret=5ql7hzop3ayl7t8l8gv420xrki0562&grant_type=client_credentials", ""
+    ).subscribe( value =>{
+      
+      this.token = value.access_token;
+      console.log(this.token);
+
+      this.http
       .get(
         "https://api.twitch.tv/helix/clips?broadcaster_id=441022939&first=6",
         httpOptions
@@ -33,5 +37,22 @@ export class ClipsComponent implements OnInit {
           console.log(this.clips[i]);
         }
       });
+    });
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        "Content-Type": "application/json",
+        "client-id": "tvzmv9pqdb75jezxq3epy0plkkgd19",
+        // "Authorization": this.token,
+        "Authorization": "Bearer prhzw17xw5b7mfp7w80fadbjccdbt0"
+      })
+    };
+
+    
   }
+
+  getClips(httpOptions){
+    
+  }
+
 }
