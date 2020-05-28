@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import IClips from "../models/IClips";
+import IToken from "../models/IToken";
 
 @Component({
   selector: "app-clips",
@@ -13,12 +14,12 @@ export class ClipsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    
+
 
     this.http.post(
       "https://id.twitch.tv/oauth2/token?client_id=tvzmv9pqdb75jezxq3epy0plkkgd19&client_secret=5ql7hzop3ayl7t8l8gv420xrki0562&grant_type=client_credentials", ""
-    ).subscribe( value =>{
-      
+    ).subscribe( (value: IToken) => {
+
       this.token = value.access_token;
       console.log(this.token);
 
@@ -48,11 +49,11 @@ export class ClipsComponent implements OnInit {
       })
     };
 
-    
+
   }
 
   getClips(httpOptions){
-    
+
   }
 
 }
