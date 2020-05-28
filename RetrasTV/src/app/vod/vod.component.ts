@@ -22,7 +22,7 @@ export class VodComponent implements OnInit {
       httpOptions
       )
       .subscribe( value => {
-                
+
         for (let i = 0; i < value.items.length; i++) {
           this.videos.push([
             "https://www.youtube.com/embed/" + value.items[i].id.videoId,
