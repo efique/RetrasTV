@@ -18,21 +18,22 @@ export class VodComponent implements OnInit {
       })
     };
     this.http.get(
+      // tslint:disable-next-line: max-line-length
       "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDUvJu0o6d3uBs2btHd0VWNH0qfM-I6YQY&channelId=UCnjeK3mWAL_RfAyMdYts9GA&order=date&part=snippet &type=video,id&maxResults=50",
       httpOptions
       )
-      .subscribe( value => {
+      .subscribe( (value : IVods) => {
 
         for (let i = 0; i < value.items.length; i++) {
           this.videos.push([
             "https://www.youtube.com/embed/" + value.items[i].id.videoId,
             value.items[i].snippet.title
           ])
-          
+
         }
         console.log(this.videos)
-        
-        
+
+
       });
   }
 
@@ -60,5 +61,5 @@ export class VodComponent implements OnInit {
   //     });
   // }
 
-  
+
 }
